@@ -36,16 +36,18 @@ export function Todos({ todo }) {
   return (
     <div className="todos">
       <form className="todos-form" onSubmit={handleSubmit}>
-        <input
-          placeholder="Digite uma tarefa"
-          className="todos-input"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <button className="todos-submit not-selectable" type="submit">
-          +
-        </button>
+        <div className="form-input">
+          <input
+            placeholder="Digite uma tarefa"
+            className="todos-input"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <button className="todos-submit not-selectable" type="submit">
+            +
+          </button>
+        </div>
         <div className="todo-item-container">
           {todos.map((todo) => {
             return <Todo key={todo.id} todo={todo} dispatch={dispatch} />;
