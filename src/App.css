@@ -57,8 +57,9 @@ h5{
 
 .todos{
     width: min(30rem, 90%);
+    min-height: 30rem;
     margin-inline: auto;
-    margin-top: 4em;
+    margin-block: 4em;
     background-color: #262626;
     border-radius: 1rem;
     padding: 2em;

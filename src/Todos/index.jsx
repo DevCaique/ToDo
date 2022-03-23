@@ -59,7 +59,7 @@ export function Todos({ todo }) {
         <div className="todos">
 
             <form className="todos-form" onSubmit={handleSubmit}>
-                <input className="todos-input" type="text" value={name} onChange={e => setName(e.target.value)} />
+                <input placeholder='Digite uma tarefa' className="todos-input" type="text" value={name} onChange={e => setName(e.target.value)} />
                 <button className="todos-submit not-selectable" type="submit"> + </button>
             </form>
 
