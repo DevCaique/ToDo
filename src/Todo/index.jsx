@@ -7,7 +7,7 @@ export function Todo({ todo, dispatch }) {
         <>
 
             <div className="todo-item">
-                <span className='todo-taref' style={{ color: todo.complete ? "#AAA" : "#000" }}>
+                <span className='taref' style={{ color: todo.complete ? "#AAA" : "#000" }}>
                     {todo.name}
                 </span>
                 <div className="button-area">

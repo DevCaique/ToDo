@@ -98,12 +98,29 @@ h5{
     padding-inline: 2em;
 }
 
+.taref{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 .button-area{
     display: flex;
+    gap: 1em;
+    margin-left: 2em;
 }
 
 .todo-btn{
-    display: flex;
-    gap: 1em;
-    margin-left: 1em;
+    background-color: #fff  ;
+}
+
+@media screen and (max-width: 768px) {
+
+    .todos{
+        padding: 1em;
+    }
+
+    .todo-item{
+        padding-inline: 1em;
+    }
+
 }
