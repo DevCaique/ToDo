@@ -1,0 +1,109 @@
+/* ======================================== Google Fonts ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* ======================================== CSS Variables ======================================== */
+
+:root{
+
+    /* Typography */
+    --fz-normal: 1.125rem;
+
+    --fw-medium: 500;
+    --fw-normal: 400;
+    --fw-thin: 300;
+
+    --ff-body: 'Rubik', sans-serif;
+
+}
+
+/* ======================================== HTML Reseting ======================================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-family: var(--ff-body);
+    height: 100vh;
+    display: grid;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1;
+}
+
+/* ======================================== Styling ======================================== */
+
+.not-selectable{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.todos{
+    width: min(30rem, 90%);
+    margin-inline: auto;
+    margin-top: 4em;
+    background-color: #262626;
+    border-radius: 1rem;
+    padding: 2em;
+}
+
+.todos-form{
+    width: 1fr;
+    display: flex;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.todos-input {
+    outline: none;
+    border: none;
+    flex-basis: 75%;
+    padding: 1em 2em;
+}
+
+.todos-submit {
+    flex-basis: 25%;
+    padding: 1em 2em;
+}
+
+.todo-item-container{
+    width: 100%;
+}
+
+.todo-item{
+    background-color: lightcyan;
+    padding-block: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2em;
+}
+
+.button-area{
+    display: flex;
+}
+
+.todo-btn{
+    display: flex;
+    gap: 1em;
+    margin-left: 1em;
+}
